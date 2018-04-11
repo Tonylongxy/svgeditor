@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=""en>
+    <head>
+    <meta charset="UTF-8">
+    <title>SVGEditor</title>
+    <link rel="stylesheet" href="css/new.css" />	
+    </head>
+<body>
+<div class="editor-box clearfix">
+    <div class="action-show"></div>
+    <div class="action-box">
+        <h2>创建</h2>
+        <div class="create">
+        <button id="rect">rect</button>
+        <button id="circle">circle</button>
+        <button id="ellipse">ellipse</button>
+        <button id="line">line</button>
+        </div>
+		<h2>形状</h2>
+		<div class="create-shape"></div>
+		<h2>外观和变换</h2>
+		<div class="face">
+		<label>填充<input type="color" id="fill"></label>
+		<label>描边<input type="color" id="stroke"></label>
+		<label>描边大小<input type="range" id="stroke-width"></label>
+		</div>
+		<div class="transform">
+		<label>translateX<input type="range" id="translate-x"></label>
+		<label>translateY<input type="range" id="translate-y"></label>
+		<label>rotate<input type="range" id="rotate"></label>
+		<label>scale<input type="range" id="scale"></label>
+		</div>
+    </div>
+</div>
+<script src="./js/svg.js"></script>
+</body>
+</html>
